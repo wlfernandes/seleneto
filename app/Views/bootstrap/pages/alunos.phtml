@@ -1,0 +1,28 @@
+<?=$this->render('bootstrap/header',$data);?>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alunos">
+                <div class="panel panel-primary">
+                    <div class="panel-heading"><?=$data->titulo?></div>
+                    <div class="panel-body">
+                        <table class="table table-striped">
+                            <tbody>
+                                wllington
+                            <?php foreach($data->all() as $obj): ?>
+                                <tr>
+                                    <td><?=$obj->nome?></td>
+                                    <td><?=$obj->cidade?></td>
+                                    <td><?=$obj->idade.' anos'?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                            </tbody>
+                        </table>
+                        <p><?=$data->message?></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<?=$this->render('bootstrap/header',$data);?>

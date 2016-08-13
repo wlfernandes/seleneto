@@ -1,0 +1,7 @@
+create table Alunos(
+   id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+   nome VARCHAR(255) NOT NULL,
+   idade INT(11) NOT NULL,
+   cidade VARCHAR(255),
+   data_de_cadastro TIMESTAMP DEFAULT NOW()
+  );
